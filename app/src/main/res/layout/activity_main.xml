@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:background="@drawable/hitchhiker"
+    android:alpha="0.9">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listview_main"
+        android:divider="@color/gray"
+        android:dividerHeight="5.0sp"
+        android:alpha="0.85"
+        android:background="@drawable/txtview_test"
+        android:backgroundTint="@color/white"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout"
+        android:background="@drawable/txtview_test"
+        android:backgroundTint="@color/white"
+        android:padding="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:alpha="0.85"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/addnew_btn"
+            android:onClick="showAddTrempDialog"
+            android:background="@mipmap/ic_addnew"
+            android:focusable="true"/>
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/searchTremp_btn"
+            android:background="@mipmap/ic_search_tremp_btn"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right|center"
+            android:hint="חפש טרמפ"
+            android:id="@+id/search_box"
+            android:layout_weight="0.41"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
